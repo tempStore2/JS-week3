@@ -7007,6 +7007,11 @@ textarea:focus {
 .material-icons:hover {
   color: #2a8356; }
 
+.add-admin {
+  color: #343a40; }
+  .add-admin:hover {
+    color: #2a8356; }
+
 .user-img {
   background-position: center;
   background-size: cover;
