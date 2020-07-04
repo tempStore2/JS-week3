@@ -1,0 +1,366 @@
+---
+title: assignment
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+
+<!-- 右側主要內容 -->
+<section class="w-100 px-5">
+  <!-- 課程選單搜尋 -->
+  <div class="d-flex justify-content-between align-items-center pt-5 pb-6">
+    <ul class="nav d-flex align-items-center">
+      <li class="nav-item h4 pr-6">
+        Assignment
+      </li>
+      <li class="nav-item dropdown">
+        <a
+          class="text-decoration-none dropdown-toggle d-flex text-dark font-weight-bold"
+          data-toggle="dropdown"
+          href="#"
+          role="button"
+          aria-haspopup="true"
+          aria-expanded="false"
+          >All Courses<span class="material-icons text-secondary ml-2">
+            expand_more
+          </span></a
+        >
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">HTML&CSS</a>
+        </div>
+      </li>
+    </ul>
+    <ul class="nav">
+      <li class="nav-item pr-4">
+        <a class="text-dark" href="#"
+          ><span class="material-icons">
+            search
+          </span></a
+        >
+      </li>
+      <li class="nav-item">
+        <a class="text-dark" href="#"
+          ><span class="material-icons">
+            notifications_active
+          </span></a
+        >
+      </li>
+    </ul>
+  </div>
+  <!-- 課程提問搜索 -->
+  <div class="d-flex justify-content-between mb-1">
+    <a
+      class="text-decoration-none dropdown-toggle d-flex text-dark font-weight-bold"
+      data-toggle="dropdown"
+      href="#"
+      role="button"
+      aria-haspopup="true"
+      aria-expanded="false"
+      >All (4)<span class="material-icons text-secondary ml-2">
+        expand_more
+      </span></a
+    >
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Chapter Assignment 2</a>
+      <a class="dropdown-item" href="#">Chapter Assignment 1</a>
+      <a class="dropdown-item" href="#">Final Assignment</a>
+    </div>
+    <small class="text-muted">2 comments</small>
+  </div>
+  <!-- 課程問答主要區 -->
+  <div class="row">
+    <!-- 課程提問區 -->
+    <div class="col-3">
+      <div class="list-group" id="list-tab" role="tablist">
+        <!-- 提問-1 -->
+        <a
+          class="list-group-item list-group-item-action active text-dark border-success px-3"
+          id="list-home-list"
+          data-toggle="list"
+          href="#list-home"
+          role="tab"
+          aria-controls="home"
+          ><div class="d-flex w-100 justify-content-between mb-1">
+            <small>Chapter Assignment 2</small>
+            <small>4 hrs ago</small>
+          </div>
+          <div class="d-flex w-100 justify-content-between">
+            <p class="mb-0 font-weight-bold">
+              Please check this file…
+            </p>
+            <small class="text-muted">Emily Wang</small>
+          </div>
+        </a>
+        <!-- 提問-2 -->
+        <a
+          class="list-group-item list-group-item-action text-dark border-success px-3"
+          id="list-profile-list"
+          data-toggle="list"
+          href="#list-profile"
+          role="tab"
+          aria-controls="profile"
+          ><div class="d-flex w-100 justify-content-between mb-1">
+            <small>Chapter Assignment 1</small>
+            <small>12 hrs ago</small>
+          </div>
+          <div class="d-flex w-100 justify-content-between">
+            <p class="mb-0 font-weight-bold">
+              My Homework
+            </p>
+            <small class="text-muted">David Xu</small>
+          </div></a
+        >
+        <!-- 提問-3 -->
+        <a
+          class="list-group-item list-group-item-action text-dark border-success px-3"
+          id="list-settings-list"
+          data-toggle="list"
+          href="#list-settings"
+          role="tab"
+          aria-controls="settings"
+          ><div class="d-flex w-100 justify-content-between mb-1">
+            <small>Final Assignment</small>
+            <small>18 hrs ago</small>
+          </div>
+          <div class="d-flex w-100 justify-content-between">
+            <p class="mb-0 font-weight-bold">
+              Have a problem with this…
+            </p>
+            <small class="text-muted">Tony Wei</small>
+          </div></a
+        >
+        <!-- 提問-4 -->
+        <a
+          class="list-group-item list-group-item-action text-dark border-success px-3"
+          id="list-messages-list"
+          data-toggle="list"
+          href="#list-messages"
+          role="tab"
+          aria-controls="messages"
+          ><div class="d-flex w-100 justify-content-between mb-1">
+            <small>Final Assignment</small>
+            <small>19 hrs ago</small>
+          </div>
+          <div class="d-flex w-100 justify-content-between">
+            <p class="mb-0 font-weight-bold">
+              Did I do it right?
+            </p>
+            <small class="text-muted">Christina Lin</small>
+          </div></a
+        >
+      </div>
+    </div>
+    <!-- 課程答覆區 -->
+    <div class="col-9 pl-0">
+      <div
+        class="tab-content border border-success rounded mb-4"
+        id="nav-tabContent"
+      >
+        <div
+          class="tab-pane fade show active"
+          id="list-home"
+          role="tabpanel"
+          aria-labelledby="list-home-list"
+        >
+          <div class="bg-primary border-bottom border-success px-3 py-2">
+            <small>Chapter Assignment 2 / HTML&CSS</small>
+            <div class="d-flex justify-content-between">
+              <p class="font-weight-bold m-0">
+                Please check this file for me, thanks!
+              </p>
+              <a href="#" class="text-dark"
+                ><span class="material-icons">
+                  more_vert
+                </span></a
+              >
+            </div>
+          </div>
+          <ul class="list-unstyled">
+            <!-- 課程提問 -->
+            <li class="media p-3">
+              <img
+                src="https://images.unsplash.com/photo-1504051771394-dd2e66b2e08f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2134&q=80"
+                class="user-img mr-3"
+                alt="user"
+              />
+              <div class="media-body pb-3 border-bottom border-success">
+                <h6 class="m-0">Emily Wang</h6>
+                <small class="text-muted">10:38 AM (4 hours ago)</small>
+                <p class="my-3">
+                  Hi Teacher, the attached file is my homework of chapter 2. And
+                  here comes a question: Why in the following code the height of
+                  the
+                  <code class="code-bg p-1">div</code> is bigger than the height
+                  of the<code class="code-bg p-1">img</code>
+                  ? There is a gap below the image, but it doesn’t seems to be a
+                  padding/margin. What is the gap or extra space below image?
+                </p>
+                <button
+                  type="button"
+                  class="d-flex btn btn-primary border border-success font-weight-bold"
+                >
+                  <span class="material-icons pr-1">
+                    attach_file
+                  </span>
+                  HW-2-David.zip
+                </button>
+              </div>
+            </li>
+            <!-- 課程答覆 -->
+            <li class="media position-relative px-3 pb-3">
+              <img
+                src="https://images.unsplash.com/photo-1514794749374-fb67509dbb7f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2000&q=80"
+                class="user-img mr-3"
+                alt="user"
+              />
+              <div class="media-body">
+                <div class="d-flex justify-content-between mb-3">
+                  <div>
+                    <h6 class="m-0">Andy Chen (You)</h6>
+                    <small class="text-muted">13:24 AM (1 hours ago)</small>
+                  </div>
+                  <div>
+                    <a href="#" class="text-dark"
+                      ><span class="material-icons mr-4">
+                        star_border
+                      </span></a
+                    >
+                    <a href="#" class="text-dark">
+                      <span class="material-icons">
+                        create
+                      </span>
+                    </a>
+                  </div>
+                </div>
+                <p>
+                  Hi David, by default, an image is rendered inline, like a
+                  letter so it sits on the same line that a, b, c and d sit on.
+                  There is space below that line for the descenders you find on
+                  letters like g, j, p and q.
+                </p>
+                <p>You can:</p>
+
+                <ul>
+                  <li class="mb-2 list-style">
+                    adjust the
+                    <code class="code-bg p-1">vertical-align</code> of the image
+                    to position it elsewhere (e.g. the
+                    <code class="code-bg p-1">middle</code> )
+                  </li>
+                  <li class="list-style">
+                    change the <code class="code-bg p-1">display</code> so it
+                    isn’t inline.
+                  </li>
+                </ul>
+              </div>
+              <!-- 回覆留言功能 -->
+              <div
+                class="w-0 h-0 left-0 transition position-absolute border border-success rounded overflow-hidden"
+              >
+                <div class="d-flex align-items-center bg-primary py-3 px-4">
+                  <a href="#" class="text-dark text-decoration-none">
+                    <h6 class="d-flex align-items-center">
+                      Body Text<span class="material-icons ml-2">
+                        arrow_drop_down
+                      </span>
+                    </h6>
+                  </a>
+
+                  <a href="#" class="text-dark"
+                    ><span class="material-icons ml-4">
+                      format_bold
+                    </span></a
+                  >
+                  <a href="#" class="text-dark"
+                    ><span class="material-icons ml-4">
+                      format_italic
+                    </span></a
+                  >
+                  <a href="#" class="text-dark"
+                    ><span class="material-icons ml-4">
+                      format_list_bulleted
+                    </span></a
+                  >
+                  <a href="#" class="text-dark"
+                    ><span class="material-icons ml-4">
+                      format_list_numbered
+                    </span></a
+                  >
+                  <a href="#" class="text-dark"
+                    ><span class="material-icons ml-4">
+                      insert_photo
+                    </span></a
+                  >
+                  <a href="#" class="text-dark"
+                    ><span class="material-icons ml-4">
+                      insert_link
+                    </span></a
+                  >
+                  <a href="#" class="text-dark"
+                    ><span class="material-icons ml-4">
+                      chevron_left
+                    </span></a
+                  >
+                  <a href="#" class="text-dark"
+                    ><span class="material-icons">
+                      chevron_right
+                    </span></a
+                  >
+                </div>
+                <textarea
+                  placeholder="Reply an answer…"
+                  cols="20"
+                  rows="10"
+                  class="w-100 p-3 border border-success rounded"
+                ></textarea>
+                <div class="position-absolute right-0 bottom-0 mr-4 mb-3">
+                  <button
+                    type="button"
+                    class="btn btn-outline-secondary text-hoverWhite font-weight-600 mr-3 cancel"
+                  >
+                    Cancel
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-secondary text-white btn-outline-secondary text-white font-weight-600"
+                  >
+                    Reply
+                  </button>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- 開啟回覆留言 -->
+      <div class="d-flex justify-content-between mr-1">
+        <div>
+          <a href="#" class="text-dark"
+            ><span class="material-icons mr-4">
+              chevron_left
+            </span></a
+          >
+          <a href="#" class="text-dark">
+            <span class="material-icons">
+              chevron_right
+            </span></a
+          >
+        </div>
+        <div>
+          <button
+            type="button"
+            class="btn btn-outline-secondary text-hoverWhite font-weight-600 mr-3"
+          >
+            Mark as read
+          </button>
+          <button
+            type="button"
+            class="btn btn-secondary text-white btn-outline-secondary font-weight-600 openTextarea"
+          >
+            Reply
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
